@@ -8,7 +8,7 @@ before_filter :authenticate, :only => :destroy
 		redirect_to post_path(@post)
 	end
 
-	def delete
+	def destroy
         @post = Post.find(params[:post_id])
 		@comment = @post.comments.find(params[:id])
         @comment.destroy
