@@ -28,6 +28,6 @@
   <%= render :partial => 'tags/form',
 			 :locals  => {:form => post_form} %>
   <div class="actions">
-    <%= post_form.submit %>
+    <%= f.submit %>
   </div>
 <% end %>
