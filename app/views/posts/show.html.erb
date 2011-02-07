@@ -17,8 +17,8 @@
 
   <p>
     <b>Tags:</b>
-    <%= @post.tags.map { |t| t.name }.join(", ") %>
-  </p>
+    <%= join_tags(@post) %>
+    </p>
  
 <h2>Comments</h2>
 <%= render :partial => "comments/comment",
