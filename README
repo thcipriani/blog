@@ -2,11 +2,12 @@ Very rough tweaking of the default railsguides blog application.
 
 Implemented so far...
 ==================================================
-1. Haml (partially...)
+1. Haml 
+2. Sass/Sass 960.gs - partially...
 
 Plan to implement...
 ==================================================
-1. Sass/Sass 960.gs framework (https://github.com/douglasjarquin/960-sass)
-2. Better layout/views
+1. Better layout/views
+2. Devise for auth
 3. Disqus for comments
 
