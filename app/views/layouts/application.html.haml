@@ -7,4 +7,16 @@
 	= csrf_meta_tag
 
 %body
+	%p.notice= notice
+	%p.alert= alert
+
+	#user_nav
+		- if admin_signed_in?
+			Signed in as #{current_admin.email} Not you?
+			= link_to "Sign out", destroy_admin_session_path
+		- else
+		= link_to "Sign up", new_admin_registration_path 
+		\or 
+		= link_to "Sign in", new_admin_session_path
+
 	= yield
