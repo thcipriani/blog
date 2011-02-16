@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
 
+<<<<<<< HEAD
   before_filter :authenticate_admin!, :except => [:index, :show]
+=======
+  before_filter :authenticate_admin, :except => [:index, :show]
+>>>>>>> 545bdf721e97037ce8f52def4eec7f38085a80f8
 
   # GET /posts
   # GET /posts.xml
